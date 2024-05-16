@@ -1,0 +1,20 @@
+CREATE TABLE ApolloBusinessCenter.leads_Web (
+    id SERIAL PRIMARY KEY,
+    url TEXT,
+    title TEXT,
+    phone TEXT,
+    emails TEXT,
+    linkedin TEXT,
+    facebook TEXT,
+    instagram TEXT,
+    twitter TEXT,
+    youtube TEXT,
+    tiktok TEXT,
+    pinterest TEXT,
+    snapchat TEXT, -- Originally float64 with 0 non-null; likely unused, using TEXT for potential future use
+    whatsapp TEXT,
+    telegram TEXT, -- Originally float64 with 0 non-null; likely unused, using TEXT for potential future use
+    skype TEXT, -- Originally float64 with 0 non-null; likely unused, using TEXT for potential future use
+    contact_page_url TEXT,
+    about_page_url TEXT
+);

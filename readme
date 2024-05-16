@@ -1,0 +1,39 @@
+>This repo is experimental and under continuous development
+
+# Python CDP
+Collection of customer data platform scripts that Im eventually packaging into a CLI. Specifically the scripts are for automating SEO can cold outreach database tasks.
+
+The current state is disorganized and waiting for proper refactoring, but there are some standalone scripts that can be useful for technical marketeers in their SEO and cold outreach.
+
+Im constantly updating this as it is my intention to build a fully functional Customer Data Platform
+
+## The current tech stack where Im focusing on
+- python
+- clickhouse SQL
+- zsh
+- Google Sheets (Gspread, AppScripts)
+### Tech that Im testing
+- Mojo
+- Go
+- Elixir
+
+### Recommended IDEs
+- VSCode
+- VSCodium
+- Cursor.sh
+
+## Recommended VSCode extensions
+- Foam
+- Markdown All in One
+- Data Wrangler
+- SQL Tools
+- YAML
+- Postman
+- Jupyter
+- Pylance
+
+# Roadmap
+- Refactoring the codebase
+  - Making the scripts more coherent and unified
+- Command line interface so these tools can be called from cli
+- Integration with Windmill.dev to make these scripts available through automatically generated UI in a similar fashion as Retool (maybe)

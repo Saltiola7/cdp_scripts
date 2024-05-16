@@ -1,0 +1,65 @@
+CREATE TABLE ApolloBusinessCenter.leads_GBP (
+    id SERIAL PRIMARY KEY,
+    keyword TEXT,
+    name TEXT,
+    full_address TEXT,
+    street_address TEXT,
+    city TEXT,
+    zip TEXT,
+    municipality TEXT,
+    state TEXT, -- Originally float64 with 0 non-null; likely a mistake or unused, using TEXT for potential future use
+    country CHAR(2),
+    timezone TEXT,
+    pricing TEXT,
+    sub_title TEXT,
+    description TEXT,
+    summary TEXT,
+    phone_1 TEXT,
+    phone_2 TEXT,
+    email TEXT,
+    website TEXT,
+    domain TEXT,
+    first_category TEXT,
+    second_category TEXT,
+    claimed_google_my_business BOOLEAN, -- Assuming 'object' with true/false-like values
+    reviews_count INTEGER, -- Originally float64, using INTEGER assuming counts are whole numbers
+    average_rating NUMERIC(3, 2), -- Assuming ratings are numbers with up to one decimal place
+    price TEXT,
+    regular_price NUMERIC, -- Originally float64 with 0 non-null; consider removal or keeping for future use
+    midgrade_price NUMERIC, -- Ditto
+    premium_price NUMERIC, -- Ditto
+    diesel_price NUMERIC, -- Ditto
+    hours TEXT,
+    saturday TEXT,
+    sunday TEXT,
+    monday TEXT,
+    tuesday TEXT,
+    wednesday TEXT,
+    thursday TEXT,
+    friday TEXT,
+    latitude NUMERIC(9, 6), -- Assuming latitude values fit within this precision
+    longitude NUMERIC(9, 6), -- Assuming longitude values fit within this precision
+    coordinates TEXT, -- Presuming complex or varied formatting; consider parsing into structured data
+    plus_code TEXT,
+    place_id TEXT,
+    image_url TEXT,
+    favicon TEXT,
+    review_url TEXT,
+    facebook_url TEXT,
+    linkedin_url TEXT,
+    twitter_url TEXT,
+    instagram_url TEXT,
+    youtube_url TEXT,
+    uuid UUID, -- Assuming 'object' format is UUID; validate this assumption
+    url TEXT,
+    accessibility TEXT,
+    amenities TEXT,
+    activities TEXT, -- Originally float64 with 0 non-null; unclear usage, using TEXT for potential placeholders
+    service_options TEXT,
+    payments TEXT,
+    offerings TEXT,
+    recycling TEXT, -- Originally float64 with 0 non-null; unclear usage, using TEXT for potential placeholders
+    from_the_business TEXT,
+    crowd TEXT,
+    planning TEXT
+);
